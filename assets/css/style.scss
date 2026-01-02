@@ -1,0 +1,83 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --max: 760px;
+}
+
+body {
+  line-height: 1.65;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav__links a {
+  margin-left: 0.75rem;
+  text-decoration: none;
+}
+
+.page h1, .post h1 {
+  margin-top: 0.5rem;
+}
+
+.post__meta {
+  margin-top: -0.25rem;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.postlist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.postlist__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.postlist__title {
+  font-size: 1.1rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.postlist__meta {
+  opacity: 0.7;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.postlist__excerpt {
+  margin-top: 0.5rem;
+}
+
+.footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  opacity: 0.8;
+}
