@@ -1,5 +1,45 @@
-title: Afonso Vale
-#logo:
-description: Data Engineer | Astrophysics Researcher
-#show_downloads:true
-theme: jekyll-theme-minimal
+title: "Afonso Vaale"
+description: "Notes on everything and anything"
+url: "https://AfonsoVale.github.io" # or your custom domain
+baseurl: ""                         # keep "" for user/organization sites
+
+# Optional: if this is a project site (repo pages), baseurl is "/REPO"
+# baseurl: "/REPO"
+
+timezone: Europe/Lisbon
+
+author:
+  name: "Your Name"
+  email: "you@example.com"
+
+permalink: /:categories/:year/:month/:day/:title/
+
+markdown: kramdown
+
+# Blog organization
+paginate: 8
+paginate_path: "/page/:num/"
+
+# Defaults for posts/pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: false
+      toc: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# If your theme supports it, these help metadata:
+social:
+  github: "YOUR-USER"
+  linkedin: "YOUR-LINKEDIN"
+  twitter: "YOUR-HANDLE"
+
+theme: minima
+
